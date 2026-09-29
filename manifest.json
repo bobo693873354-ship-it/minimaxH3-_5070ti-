@@ -1,0 +1,1016 @@
+{
+  "created_at": "2026-09-29T16:07:29.0372768+08:00",
+  "workflow_source": "D:\\ComfyUI\\App\\ComfyUI\\user\\default\\workflows\\minimaxH3动作迁移.json",
+  "workflow_sha256": "f2460950a86203701ce2c0be9e6923b961b633050c749dabeead8660049bde94",
+  "node_count": 38,
+  "unique_node_types": [
+    {
+      "type": "BasicGuider",
+      "module": "comfy_extras.nodes_custom_sampler",
+      "display_name": "Basic Guider",
+      "frontend_only": false
+    },
+    {
+      "type": "BasicScheduler",
+      "module": "comfy_extras.nodes_custom_sampler",
+      "display_name": null,
+      "frontend_only": false
+    },
+    {
+      "type": "CLIPLoader",
+      "module": "nodes",
+      "display_name": "Load CLIP",
+      "frontend_only": false
+    },
+    {
+      "type": "ComfyMathExpression",
+      "module": "comfy_extras.nodes_math",
+      "display_name": "Math Expression",
+      "frontend_only": false
+    },
+    {
+      "type": "INTConstant",
+      "module": "custom_nodes.comfyui-kjnodes",
+      "display_name": "INT Constant",
+      "frontend_only": false
+    },
+    {
+      "type": "KSamplerSelect",
+      "module": "comfy_extras.nodes_custom_sampler",
+      "display_name": null,
+      "frontend_only": false
+    },
+    {
+      "type": "LoadImage",
+      "module": "nodes",
+      "display_name": "Load Image",
+      "frontend_only": false
+    },
+    {
+      "type": "LoraLoaderModelOnly",
+      "module": "nodes",
+      "display_name": "Load LoRA",
+      "frontend_only": false
+    },
+    {
+      "type": "LTXVConcatAVLatent",
+      "module": "comfy_extras.nodes_lt",
+      "display_name": "Concat AV Latent",
+      "frontend_only": false
+    },
+    {
+      "type": "LTXVSeparateAVLatent",
+      "module": "comfy_extras.nodes_lt",
+      "display_name": "Separate AV Latent",
+      "frontend_only": false
+    },
+    {
+      "type": "ManualSigmas",
+      "module": "comfy_extras.nodes_custom_sampler",
+      "display_name": null,
+      "frontend_only": false
+    },
+    {
+      "type": "MarkdownNote",
+      "module": null,
+      "display_name": null,
+      "frontend_only": true
+    },
+    {
+      "type": "MinimaxH3LatentUpscaler3D",
+      "module": "custom_nodes.Comfyui_Minimax_h3_latent_Upscaler",
+      "display_name": "Minimax H3 Latent Upscaler (3D)",
+      "frontend_only": false
+    },
+    {
+      "type": "MiniMaxH3ReferenceToVideo",
+      "module": "comfy_extras.nodes_minimax_h3",
+      "display_name": "MiniMax H3 Reference to Video",
+      "frontend_only": false
+    },
+    {
+      "type": "MiniMaxH3SigmaShift",
+      "module": "comfy_extras.nodes_minimax_h3",
+      "display_name": "ModelSamplingMiniMaxH3",
+      "frontend_only": false
+    },
+    {
+      "type": "ModelAttentionBackend",
+      "module": "comfy_extras.nodes_model_advanced",
+      "display_name": "Model Attention Backend",
+      "frontend_only": false
+    },
+    {
+      "type": "ModelPreviewOverrideKJ",
+      "module": "custom_nodes.comfyui-kjnodes",
+      "display_name": "Model Preview Override",
+      "frontend_only": false
+    },
+    {
+      "type": "PrimitiveStringMultiline",
+      "module": "comfy_extras.nodes_primitive",
+      "display_name": "Text (Multiline)",
+      "frontend_only": false
+    },
+    {
+      "type": "RandomNoise",
+      "module": "comfy_extras.nodes_custom_sampler",
+      "display_name": null,
+      "frontend_only": false
+    },
+    {
+      "type": "ResolutionSelector",
+      "module": "comfy_extras.nodes_resolution",
+      "display_name": "Resolution Selector",
+      "frontend_only": false
+    },
+    {
+      "type": "SamplerCustomAdvanced",
+      "module": "comfy_extras.nodes_custom_sampler",
+      "display_name": null,
+      "frontend_only": false
+    },
+    {
+      "type": "SplitSigmas",
+      "module": "comfy_extras.nodes_custom_sampler",
+      "display_name": null,
+      "frontend_only": false
+    },
+    {
+      "type": "UNETLoader",
+      "module": "nodes",
+      "display_name": "Load Diffusion Model",
+      "frontend_only": false
+    },
+    {
+      "type": "VAEDecode",
+      "module": "nodes",
+      "display_name": "VAE Decode",
+      "frontend_only": false
+    },
+    {
+      "type": "VAEDecodeAudio",
+      "module": "comfy_extras.nodes_audio",
+      "display_name": "VAE Decode Audio",
+      "frontend_only": false
+    },
+    {
+      "type": "VAELoader",
+      "module": "nodes",
+      "display_name": "Load VAE",
+      "frontend_only": false
+    },
+    {
+      "type": "VHS_LoadVideo",
+      "module": "custom_nodes.comfyui-videohelpersuite",
+      "display_name": "Load Video (Upload) 🎥🅥🅗🅢",
+      "frontend_only": false
+    },
+    {
+      "type": "VHS_VideoCombine",
+      "module": "custom_nodes.comfyui-videohelpersuite",
+      "display_name": "Video Combine 🎥🅥🅗🅢",
+      "frontend_only": false
+    },
+    {
+      "type": "VHS_VideoInfo",
+      "module": "custom_nodes.comfyui-videohelpersuite",
+      "display_name": "Video Info 🎥🅥🅗🅢",
+      "frontend_only": false
+    }
+  ],
+  "packages": [
+    {
+      "folder": "comfyui-kjnodes",
+      "files": 67,
+      "bytes": 2888638,
+      "source": "D:\\ComfyUI\\App\\ComfyUI\\custom_nodes\\comfyui-kjnodes"
+    },
+    {
+      "folder": "comfyui-videohelpersuite",
+      "files": 45,
+      "bytes": 404636,
+      "source": "D:\\ComfyUI\\App\\ComfyUI\\custom_nodes\\comfyui-videohelpersuite"
+    },
+    {
+      "folder": "Comfyui_Minimax_h3_latent_Upscaler",
+      "files": 27,
+      "bytes": 9203878,
+      "source": "D:\\ComfyUI\\App\\ComfyUI\\custom_nodes\\Comfyui_Minimax_h3_latent_Upscaler"
+    }
+  ],
+  "environment": {
+    "os": "win32",
+    "ram_total": 68246401024,
+    "ram_free": 16089272320,
+    "comfyui_version": "0.37.0",
+    "required_frontend_version": "1.52.7",
+    "installed_templates_version": "0.11.66",
+    "required_templates_version": "0.11.66",
+    "comfy_package_versions": [
+      {
+        "name": "comfyui-frontend-package",
+        "installed": "1.52.7",
+        "required": "1.52.7"
+      },
+      {
+        "name": "comfyui-workflow-templates",
+        "installed": "0.11.66",
+        "required": "0.11.66"
+      },
+      {
+        "name": "comfyui-embedded-docs",
+        "installed": "0.5.12",
+        "required": "0.5.12"
+      },
+      {
+        "name": "comfy-kitchen",
+        "installed": "0.2.35",
+        "required": "0.2.35"
+      },
+      {
+        "name": "comfy-aimdo",
+        "installed": "0.5.5",
+        "required": "0.5.5"
+      }
+    ],
+    "python_version": "3.13.12 (main, Feb 12 2026, 00:38:53) [MSC v.1944 64 bit (AMD64)]",
+    "pytorch_version": "2.12.1+cu130",
+    "embedded_python": false,
+    "deploy_environment": "local-desktop2-standalone",
+    "argv": [
+      "ComfyUI\\main.py",
+      "--feature-flag",
+      "show_signin_button=true",
+      "--feature-flag",
+      "enable_telemetry=true",
+      "--enable-manager",
+      "--extra-model-paths-config",
+      "C:\\Users\\bobo6\\AppData\\Roaming\\Comfy Desktop\\instance-model-paths\\inst-1789179090680.yaml",
+      "--input-directory",
+      "D:\\Comfy-Desktop\\ComfyUI-Shared\\input",
+      "--output-directory",
+      "D:\\Comfy-Desktop\\ComfyUI-Shared\\output"
+    ]
+  },
+  "models": [
+    {
+      "node_id": 3,
+      "type": "VAELoader",
+      "filename": "minimax_h3_video_vae_fp16.safetensors",
+      "included": false
+    },
+    {
+      "node_id": 4,
+      "type": "VAELoader",
+      "filename": "minimax_h3_audio_vae_fp32.safetensors",
+      "included": false
+    },
+    {
+      "node_id": 15,
+      "type": "CLIPLoader",
+      "filename": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "included": false
+    },
+    {
+      "node_id": 30,
+      "type": "UNETLoader",
+      "filename": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "included": false
+    },
+    {
+      "node_id": 36,
+      "type": "LoraLoaderModelOnly",
+      "filename": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+      "included": false
+    },
+    {
+      "node_id": 39,
+      "type": "MinimaxH3LatentUpscaler3D",
+      "filename": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "included": false
+    }
+  ],
+  "input_media": [
+    {
+      "node_id": 47,
+      "type": "video",
+      "filename": "9月15日-3.mp4",
+      "included": false
+    },
+    {
+      "node_id": 50,
+      "type": "image",
+      "filename": "lira_character_reference.webp",
+      "included": false
+    }
+  ],
+  "exclusions": "Model weights, user media, Python environment, Git data and cache files are not included.",
+  "files": [
+    {
+      "path": "使用说明.md",
+      "bytes": 3510,
+      "sha256": "1d5691f28b12ecf93285ec7ffb8407c727c13ca0d378b72da32a863a3a1ba1a5"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/__init__.py",
+      "bytes": 132,
+      "sha256": "7d1c52e999d89ba5cc77619c179d5917cedb8ba6f6445f5b27f765d2107a6f65"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/.gitattributes",
+      "bytes": 66,
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/.github/workflows/publish.yml",
+      "bytes": 721,
+      "sha256": "3a66fabcf3eee924235bc06b2fff70c2de182cb35de6840d112d038197ca4127"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/.github/workflows/release.yml",
+      "bytes": 4773,
+      "sha256": "30b7a9eb6fd6d53bca113ca85236b4f629d8630b6ed8836a1b1088f9e716316d"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/.github/workflows/tests.yml",
+      "bytes": 3277,
+      "sha256": "56cb03bb7c01c0c2cb48db955b710f8992a4d06e1d21a15b90009b38fac86e20"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/examples/Minimax_h3_latent_Upscaler_001.mp4",
+      "bytes": 8011665,
+      "sha256": "12ed02f38b167768ff865a880bec42d15d18e60522952ae601f28fc71508e71f"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/examples/Minimax_h3_latent_Upscaler_002.jpg",
+      "bytes": 853297,
+      "sha256": "33c4cf7e57d8836cdbdf09533283b99e6f40624e54334720cbae98959e001b43"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/nodes/__init__.py",
+      "bytes": 2441,
+      "sha256": "05a43d935afc00bad5639b93876ed28bb3eb891f17fe28832b833ad0d8147cdd"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/nodes/minimax_h3_handoff_provider.py",
+      "bytes": 4603,
+      "sha256": "e6f1576f065154e69e10fb685845f1f4e76ddd0aae39cac17d417c42ac7e2872"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/nodes/minimax_h3_latent_upscaler_2d.py",
+      "bytes": 18778,
+      "sha256": "632c7d61ea60a8963aafa16c5bd70687ac25f50dd538a43c345715f1363000bb"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/nodes/minimax_h3_latent_upscaler_3d.py",
+      "bytes": 28398,
+      "sha256": "98ae75ea63b082d2e5d51a7cf47ebca1b25b544c5364b71f372e46838b015061"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/nodes/minimax_h3_refine_sequence.py",
+      "bytes": 10390,
+      "sha256": "2ca2a99724dc964814dee6fbe408dfca5f44d2d55e54b44f26e2634589fa25d9"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/nodes/minimax_h3_refine_support.py",
+      "bytes": 16234,
+      "sha256": "f0cfb7205a990ffaad8962b12c059b5a965ee5f782ea4e062470ff434f04588b"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/nodes/minimax_h3_refine.py",
+      "bytes": 19678,
+      "sha256": "2322365333a626b8e5fe844bf974c0a1caf655ad95f4c1c2a4292b1bafa8ee95"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/pyproject.toml",
+      "bytes": 548,
+      "sha256": "76db82d6ef191da05d0c32ff9abe3f360b74a5cbe8a9081d270cef687f939184"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/README_zh.md",
+      "bytes": 11557,
+      "sha256": "a2aba9375c471e6ec4427f753f179cfcdea5fbce049ca3dbfdeabfebf8fa8a9a"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/README.md",
+      "bytes": 24924,
+      "sha256": "7c72a0501c0fd78101308b0d3d6340a95d5f6d08ccc962436596d968bf8c6743"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/RELEASE_NOTES.md",
+      "bytes": 7544,
+      "sha256": "4fef4d3a123c27a9d30a3577c1919b24b850f0191d3db5da972ec527ff886fbb"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/tests/conftest.py",
+      "bytes": 1171,
+      "sha256": "a696c10daaec73aebdcf33fa105788f1f421dd90dfcfa78b509caaeac0a89a5a"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/tests/test_h3_refine_node.py",
+      "bytes": 12678,
+      "sha256": "cacb219b661b6d05460cd2ac060d91457248787bf9b1b3d0e97cf76e820f460b"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/tests/test_h3_refine_sequence.py",
+      "bytes": 5951,
+      "sha256": "903ac2acf41d4475c47e9112be95ac1d64153f5b19b565b5c6ed1cf0b4db942d"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/tests/test_h3_refine_support.py",
+      "bytes": 11909,
+      "sha256": "ef344bb22aed1d2b45f8800bb9ea7c1a7bfa6405ba16ce2cabc3f3c3c633d07e"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/tests/test_handoff_provider.py",
+      "bytes": 4802,
+      "sha256": "116af5e375000ec3f6792480578820f6c0aadf85aa8765bbd8d6d60335c9e2fc"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/tests/test_native_comfyui_fixture.py",
+      "bytes": 3565,
+      "sha256": "b0915a2e8aa0c75524945c01a894f57898e280f4923be679f1945d0a061031b8"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/tests/test_upstream_sync.py",
+      "bytes": 7641,
+      "sha256": "617f98c5f806da60ae91e09da53e9e2340dfc0860bbb4aeb086216f13a8c2daf"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/workflow_templates/minimax_h3_i2v_Latent Upscaler example workflow2.json",
+      "bytes": 76436,
+      "sha256": "9580d76ab403afb675c709e284619f4b603a14136ba591a079c52234db052b29"
+    },
+    {
+      "path": "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/workflow_templates/minimax_h3_r2v_Latent Upscaler example workflow3.json",
+      "bytes": 60699,
+      "sha256": "6e4ff56698bdb560edecfdae9bb208ed94b1a9ccc0b72154fb9e0021d9f0d574"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/__init__.py",
+      "bytes": 31160,
+      "sha256": "14640298feed1aad22198c5bfbd645ece19be125a6114645aa73c55cc9264d6e"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/.github/workflows/publish.yml",
+      "bytes": 644,
+      "sha256": "15c4c1bc3d7770cf0d2e062baf6322d92bd0b72637b870315ef35df5a1916bf5"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/.gitignore",
+      "bytes": 130,
+      "sha256": "0542d315fcd3afb11180b750159ae1361ccbb8424a400e15cdba95085833f538"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/custom_dimensions_example.json",
+      "bytes": 329,
+      "sha256": "fa89c10426a60f77abe2d72ec513e9b212743cadbecc4574de4e54fa4c41a265"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/docs/images/2024-04-03_20_49_29-ComfyUI.png",
+      "bytes": 176158,
+      "sha256": "85805d3c7ca8f5d281886ea0ad61f9a78edad755ef8014b3870f91b871807ac9"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/docs/images/319121566-05f66385-7568-4b1f-8bbc-11053660b02f.png",
+      "bytes": 94315,
+      "sha256": "ea8fbfbd58fa2ef96257cf310f108f65f5b84f44b0165c3fb320db10a86432ec"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/docs/images/319121636-706b5081-9120-4a29-bd76-901691ada688.png",
+      "bytes": 24783,
+      "sha256": "3533db6b4921fc56457e28c16fcd87e6e2a3944a92a793c1f894aea2afc3b41b"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/example_workflows/leapfusion_hunyuuanvideo_i2v_native_testing.json",
+      "bytes": 20396,
+      "sha256": "21b58128a1a467580ee8f759d1e5e77b635852bd0c0a5a2660ff682832096540"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/fonts/FreeMono.ttf",
+      "bytes": 343980,
+      "sha256": "a7c692ad545c308b7b8fc2db770760c4a5d15ca50f12addf58c8f5360370e831"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/fonts/FreeMonoBoldOblique.otf",
+      "bytes": 237600,
+      "sha256": "96187651ee033d0d9791dc2beeebfba5d1f070ab410fce1a5c16483ca249c588"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/fonts/TTNorms-Black.otf",
+      "bytes": 152736,
+      "sha256": "710977e683bf0db6416d6d41b427e0363c914e6c503a5291fcb330f30b8448ea"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/kjweb_async/marked.min.js",
+      "bytes": 35418,
+      "sha256": "cb4cf2efefd2b1f602bf2f27d594fc0a26340d2661b60cddfcaac7a7b9261886"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/kjweb_async/purify.min.js",
+      "bytes": 21346,
+      "sha256": "a08d67f5c053edcaaf9bbc021218edb27fe4ffd5bdb55b7efde2de55638cfbc9"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/audioscheduler_nodes.py",
+      "bytes": 10708,
+      "sha256": "8fb0693437380cc438c1530ecfa1f1422d1cc99e56d007152a1fb93cee3413cc"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/batchcrop_nodes.py",
+      "bytes": 32420,
+      "sha256": "a7fca222bbb223e84820131fc3549cf7a87ed44b1e9875f7a0914d37aafabaf7"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/context_windows_visualizer.py",
+      "bytes": 8939,
+      "sha256": "79a7eec8cf1b7fd698ad0c1d6ff28c5ce57d01e916be44b4ff3922172e3bdf99"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/curve_nodes.py",
+      "bytes": 70471,
+      "sha256": "27024564bd835c648f54d9d927c8544833380ee49ce04cd2e16ff8fffe1d6da0"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/hdr_preview_node.py",
+      "bytes": 6779,
+      "sha256": "853d0dd37a750b3c48bc01fe5267aad9edfb868385962ff4de15f2eda0dd07ab"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/ideogram4_nodes.py",
+      "bytes": 22008,
+      "sha256": "bad2a7f8b29782431431afc8bd591b388454d3698a1b3dfd06d4865729db7020"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/image_nodes.py",
+      "bytes": 221788,
+      "sha256": "3a83fb99219f65da19ad16aee7e1473ee7ee7e401f43662a5dcbba73f1b54eec"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/image_transform_node.py",
+      "bytes": 30990,
+      "sha256": "2315f60597e5c5a3603078f534efefd17f970175c9df0307fb37044f631bfcde"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/lora_nodes.py",
+      "bytes": 31691,
+      "sha256": "bc7df0d5fd5210470b0f040d437ad3331ae88c8fbb1758e54f3d34543ff20497"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/ltxv_nodes.py",
+      "bytes": 122787,
+      "sha256": "11286583c56e653dbd57f5e8eda6902c84b759f16b359b3bf0c895b43e6b5364"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/mask_nodes.py",
+      "bytes": 68902,
+      "sha256": "aae14dc68daff37ba8bab51355567377c80d4bf4d9d3765f2983b2213047e89d"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/minimax_nodes.py",
+      "bytes": 14861,
+      "sha256": "c67d638cd1f060ff4dd53dc3843aab77b980ea783b24ca4271300cbe040cb91b"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/model_optimization_nodes.py",
+      "bytes": 116713,
+      "sha256": "f77bb07d3b086c18e55143a125e4f91debac6fcc9fe6e0d5856f65381ad728dd"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/nodes_looping.py",
+      "bytes": 35801,
+      "sha256": "5ab988945c365d18e19c7a8dd73a7affa6edd54bea6ba7978b002a2c5a5dec93"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/nodes.py",
+      "bytes": 138209,
+      "sha256": "e9e109717c12b8f0c61c3401908fa9d1f07d23c94debb031fb85dfa2b4d9331f"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/preview_override_node.py",
+      "bytes": 37233,
+      "sha256": "6060c2382e61c041104a61c1fe06f2a163fcddc6e715d20fbf7a03f0af46715c"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/sharpen_nodes.py",
+      "bytes": 11205,
+      "sha256": "40f07e9bd71dcea8ef8bdb21a04d9585bfb2412974025a6ee216e3dc58b47758"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/tiny_vae.py",
+      "bytes": 8999,
+      "sha256": "f09d1e3ab1cb0f2ee4949f4192b7ea1bb47390c47b80f8517532301283a3472d"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/nodes/triton_vae.py",
+      "bytes": 38963,
+      "sha256": "1181c51c7ed44d40f4fde5e970b1b32dc60a3d26e43d0a4c814d49ec0132e3f0"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/pyproject.toml",
+      "bytes": 504,
+      "sha256": "d01ba335452bd70b0c9f3fa2b48224852118bfa94fd22c4a1cec3eabbd719b67"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/README.md",
+      "bytes": 4304,
+      "sha256": "9f9493fec728b782ec9bac709b2522fcc01b456db78a97dd83f7b91eea0af136"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/requirements.txt",
+      "bytes": 67,
+      "sha256": "e8cc1fb089c6e74bb5f326e949fd89ea7653de0d193d7a385c38af44e66656bd"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/utility/fluid.py",
+      "bytes": 2917,
+      "sha256": "a78f8575f4f201e0c15d0470f9e1248ff6e2c6e511ea1ddd8090bef7d4c423a4"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/utility/magictex.py",
+      "bytes": 3117,
+      "sha256": "14c8a344fa1c49701d258991456770fbbbb4ed732e4edbd77862a273a3c808a8"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/utility/numerical.py",
+      "bytes": 906,
+      "sha256": "ce28bbef99a0f15cd4f47c5bf649814ae3f9243517235cd5e4aedd25d09b5802"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/utility/utility.py",
+      "bytes": 5572,
+      "sha256": "00f7132ca060a3d2c064455b9c29a1fee7c73c3fe276150a13fd919ea2e6ee8f"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/appearance.js",
+      "bytes": 865,
+      "sha256": "8abb861e850a207dffc6dd4d8772aaa608a374948e54f4228c7e5443a3a8bc03"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/canvas_background.js",
+      "bytes": 16042,
+      "sha256": "67063ee4f0892cf9fc23da1bdf908c35a6a4433c24bd53b916fab95d3dfb9510"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/context_windows_visualizer.js",
+      "bytes": 37310,
+      "sha256": "a6e38008ddb8a985c5cd4bfa7c1e6a2f906f72c7efeb7d43be17de166e79eaea"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/contextmenu.js",
+      "bytes": 5862,
+      "sha256": "82de0155a78a990016b10d3467a8c5e12504a70d9fe777ad5c17ffb91e0f45a7"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/editors/editor_base.js",
+      "bytes": 28652,
+      "sha256": "87cb8750743b5ecfbc1c6cfbbb45fdf4f32619a251e2fa2263645aa4926a4f61"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/editors/interpolation.js",
+      "bytes": 9322,
+      "sha256": "551e216edfa0c1eaee4a0cbc2b24efae23531ad9190a23f72be17ed8073f97fd"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/editors/point_editor_canvas.js",
+      "bytes": 14936,
+      "sha256": "68c027c3482a8dd121bcfc440b13fe465c65dbdeb16d4034d9d3f0a248370cf2"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/editors/spline_editor_canvas.js",
+      "bytes": 31782,
+      "sha256": "ee614ac30007a0634f86912123e94d3a1e6d32fd5c100dfba00ea44dcb2a4afc"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/fast_preview_batch.js",
+      "bytes": 23778,
+      "sha256": "bd89c3d1ef030ef0d9ff0258b2d1c3e188a9cc1413f47252b19755aee5bb342b"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/fast_preview.js",
+      "bytes": 1403,
+      "sha256": "2a75f847301f595c3eeffd1a96d7cfc4d3fb1ec719ff40807c7a67eb9dc631a4"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/fillconnect.js",
+      "bytes": 6162,
+      "sha256": "6e45476b216b2912496d216419bb66d6df5ba9086fa1aa90972084f1fd3b395d"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/fix_node.js",
+      "bytes": 3490,
+      "sha256": "8e2d9a1eaa468bed8c929a33e5fab1e5ce0e13245203d20a922248f733b27f4c"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/hdr_preview.js",
+      "bytes": 24238,
+      "sha256": "adcfd1710d891c501bffe348ae9f63da998ae92c9de336abaabee99567dd27b0"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/help_popup.js",
+      "bytes": 14510,
+      "sha256": "60a787196f976b450f446c107f65342251fdb90b069445b67899abd8599ba472"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/ideogram4_prompt_builder.js",
+      "bytes": 157368,
+      "sha256": "b155189d071ae49cbc74d477ff68e52beb918523bd9db3c07f3be11d5984d4f3"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/image_transform.js",
+      "bytes": 96758,
+      "sha256": "49afd595d599db83ff594125fe70668ed700dfe81d5bd8314ca1f91d833ebfee"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/jsnodes.js",
+      "bytes": 15099,
+      "sha256": "66f8a24d78de3b60117209bd8c439d7bac423f3762f34643e09c1eb6a375f9ad"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/node_insert.js",
+      "bytes": 14309,
+      "sha256": "a95aa3f1a32afd8c7b496b096b5bedefb42180fc1ad5dd4de88168dddfa0c03a"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/nodeswap.js",
+      "bytes": 12504,
+      "sha256": "3668f4193895f43e26f89af5b60dfceb7ca6060b6c0a04351348c2c79d3be331"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/performance.js",
+      "bytes": 8820,
+      "sha256": "8dc63fdf9fac2fbe72cdff83f5a87a405eed30d95a681154dd4d1c45b38b6561"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/play_sound.js",
+      "bytes": 3934,
+      "sha256": "8ad5ae7d996db3bd4e3a5dbee5d3cce30757a513af0a15d852a0b5a98db4922c"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/preview_override/preview_override.css",
+      "bytes": 3905,
+      "sha256": "234aaee16da41664b7a15d4d4341feddab98893632eae8a1ea08ca13c1409e6f"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/preview_override/preview_override.js",
+      "bytes": 42986,
+      "sha256": "27035480a5f13a8731612e7570cc090aa02cecb2c24a1fd1b5c59291e17ea6b3"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/screencap_stream.js",
+      "bytes": 16700,
+      "sha256": "ed294da9531d1d4dbe5194bad71fa16eaf47156780120c35028239b5c581c412"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/setgetnodes.js",
+      "bytes": 59294,
+      "sha256": "82d4dbcf522c23679e28132a59d907a33bc4c580e1c787afa713e3cae1e0c59d"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/shake_to_disconnect.js",
+      "bytes": 7056,
+      "sha256": "aa4b8c00cfa9cca8418f2ea85459097bbc0ec02202d2b97e6953430928f88359"
+    },
+    {
+      "path": "custom_nodes/comfyui-kjnodes/web/js/utility.js",
+      "bytes": 10555,
+      "sha256": "70d3f86f24b9f5fbdc272df61afbb58d0a247041d4e89f9a08650d3142b5144c"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/__init__.py",
+      "bytes": 398,
+      "sha256": "d3e74626bfdd628d0e96b190b2c07e25fa1e5ee9f1f402c7c650446f86b0838f"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/.github/workflows/publish.yml",
+      "bytes": 640,
+      "sha256": "1faa29b17a3bac2e2d6b6e001bfdfc03d9950d186e4ecf1c26d0a0d5948de73b"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/.gitignore",
+      "bytes": 3101,
+      "sha256": "9a2d340506c5bfc8a9272424e3d502c0093d7b48a1146459c4b9442a9f4474f7"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/pyproject.toml",
+      "bytes": 425,
+      "sha256": "299e28c3c62ec7580003132bef62e58c01fa817eff6db5a51c9f5b9e1737160a"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/README.md",
+      "bytes": 8877,
+      "sha256": "3bc23811a88c62bf188e584b2f6b75b9d88e5ceeb1a24f66684555ef07bef6bc"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/requirements.txt",
+      "bytes": 29,
+      "sha256": "dbf7158d81418ace41097db503440bb70f41b6250d5d0b3ab3b3c86271b7b2a3"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/testframework/__init__.py",
+      "bytes": 184,
+      "sha256": "62512d3505004d4d264fd10ab02634b69dc8074a87f87896cce33802d1fc878c"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/testframework/README.md",
+      "bytes": 466,
+      "sha256": "0591f3ea7557f7893618016d9c10824e2c67ea61b14d20946a081ed204f3e083"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/testframework/server.py",
+      "bytes": 2836,
+      "sha256": "bc24382424b1409edf25b637beb4a698ce1476b68189d2cac3a019a4a76e8045"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/testframework/web/js/testRunner.js",
+      "bytes": 3132,
+      "sha256": "1f8aa0a3411204363ed86f6df27f8620a8630227986cd73bfe7b7d70d8a5514f"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/tests/audio.json",
+      "bytes": 6092,
+      "sha256": "acb0c5d03c19b0d7d930a4fc2e5eed310c0eeac2e53523c877178d14b846f48e"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/tests/batch4x4.json",
+      "bytes": 10236,
+      "sha256": "c9a9896b34b644c95849a4fc993c837b3cd3aab49fcf1589c89d225e4d931383"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/tests/converted-format-input.json",
+      "bytes": 4514,
+      "sha256": "0c1e2879da768fcbd9b95b0bee4259e38bd6ec1f7866115d3cc956d48f97b729"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/tests/converted-input.json",
+      "bytes": 5917,
+      "sha256": "9d1c38b3c6db83a0cac1f728d6a8394e369706c3cf77a4f61dc344398ccb9158"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/tests/loop.json",
+      "bytes": 3643,
+      "sha256": "32e3b1317dcfa0127a667377f77a9bd0d06f1004668bc7dbeaa6d2a32018a3bd"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/tests/old-prores.json",
+      "bytes": 8694,
+      "sha256": "0bba95e48d0c649f96ab100cc84f0f27f5644c7d617a57fb6184eb6e2adc30a1"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/tests/old-vae-conversion.json",
+      "bytes": 4430,
+      "sha256": "58f369cedc6ccff64e08ce675f1599b6d4f0e47eb4c36a8e3c88db85fe137884"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/tests/README.md",
+      "bytes": 140,
+      "sha256": "f067ce90b2c1bcd04f19db3cd38b24757040ec0d07945ac493f318f5e45a32af"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/tests/simple.json",
+      "bytes": 2820,
+      "sha256": "3f4f0efd1db24db2b47ba81d279c6e0d0bc07ed3ac043095ac0e9475ad9dc4f4"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/16bit-png.json",
+      "bytes": 139,
+      "sha256": "a6be0eb5d81375b4d5b02b36610aef14e1738aa212ccfb22f8353ca2e2c4ad86"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/8bit-png.json",
+      "bytes": 75,
+      "sha256": "a7a133243e6c6de1b7016909ee78d61ac1ea26dc0bf064d6fb1a243a731a1c82"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/av1-webm.json",
+      "bytes": 625,
+      "sha256": "3d94f848cada030ff738715997fb7503f39f69cdb9850452581c8896b951087e"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/ffmpeg-gif.json",
+      "bytes": 366,
+      "sha256": "ff56425b7520b106310fa12022ff7fc26becbc202cc822c899e159351033abb7"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/ffv1-mkv.json",
+      "bytes": 1111,
+      "sha256": "6a19aeb65c5789145d60340e98aaa4d8426d61261a35ca87356c28f889f201a2"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/gifski.json",
+      "bytes": 287,
+      "sha256": "1e939f3df9a1ba029cd20db86da9bf998ba835ff828f7d7428ea990e7ad1439e"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/h264-mp4.json",
+      "bytes": 585,
+      "sha256": "736ca4a7057d26ae25cc57c5d686afbc95980c439199c17c8be02b3136cb57b8"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/h265-mp4.json",
+      "bytes": 611,
+      "sha256": "e2a72bdcfcbf07e73e146716e89e0182ea4bb249530758d586e91ed45da6393c"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/nvenc_av1-mp4.json",
+      "bytes": 572,
+      "sha256": "dffe86c90af9ca37729b510f824f36791356f5acf5747a323da619d9cb2f2d11"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/nvenc_h264-mp4.json",
+      "bytes": 573,
+      "sha256": "c93c8a0f2549e20f9f2d746052d633eeaa00187734571a4e327e0672112069dd"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/nvenc_hevc-mp4.json",
+      "bytes": 598,
+      "sha256": "3a6ad85bc69bd35f7888ee44d3d9e5076138443a7b8dfae6a4267f2236676e31"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/ProRes.json",
+      "bytes": 943,
+      "sha256": "781d0128a79edf0474de19c48ab5ebc128f2e022533c68435266150eb82ee2c0"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/video_formats/webm.json",
+      "bytes": 589,
+      "sha256": "04a0c5ac4a14d73baae933e230b37257857214c31492adc2b990f8009892379d"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/videohelpersuite/batched_nodes.py",
+      "bytes": 1790,
+      "sha256": "c822651e28c775a35da1441e2b1b2d7cd664fcc6649ba9d2c9b87faa8ac00edb"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/videohelpersuite/documentation.py",
+      "bytes": 43805,
+      "sha256": "0d648daf98831545ee33f50a53ead7f12779d6630b1a001f7d9ea8418b4d90e0"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/videohelpersuite/image_latent_nodes.py",
+      "bytes": 19039,
+      "sha256": "da2abefefef8d44d1a927417866205149cb85dc6a41cab7f542bd332e96d5390"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/videohelpersuite/latent_preview.py",
+      "bytes": 5500,
+      "sha256": "3dc18cba8bc44614db45547258c8800b0b61fb566b4af706cf0306ef45b8c5f0"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/videohelpersuite/load_images_nodes.py",
+      "bytes": 8120,
+      "sha256": "275fa08acf4ee3163c6d403abea5ef7d088b0a6afbd705d9b0d55623818ffdc4"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/videohelpersuite/load_video_nodes.py",
+      "bytes": 29032,
+      "sha256": "8991b715a999408c3821045e2a781609a156476d771325679e9ad9ca16db0aee"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/videohelpersuite/logger.py",
+      "bytes": 1057,
+      "sha256": "2e2e9ed679410a170346c572a867d9a654327388ba6ea6a242215c590772e668"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/videohelpersuite/nodes.py",
+      "bytes": 47770,
+      "sha256": "6d975d8fd8906784a4d9233ccc1238150ed33c6311d06c53fd08b5ee96e30442"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/videohelpersuite/server.py",
+      "bytes": 12178,
+      "sha256": "7f6831f3095c09a0c8076b8676c2bdf966cbb3ed2884b58da6e571e989b806fc"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/videohelpersuite/utils.py",
+      "bytes": 17044,
+      "sha256": "ea3d02e0f41dc6b59685fcf6de9217d4b7729766e05e44200433c74e75466a6a"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/web/js/VHS.core.js",
+      "bytes": 106191,
+      "sha256": "437b2b9745df24372a0ec686483e7ac1aa9b08b0f32db4eda9a8b0d66ca9023f"
+    },
+    {
+      "path": "custom_nodes/comfyui-videohelpersuite/web/js/videoinfo.js",
+      "bytes": 4313,
+      "sha256": "29db4800fe2b86303619bd1768b97aabdad0fe300db93da7135bdffa43f07970"
+    },
+    {
+      "path": "workflows/minimaxH3动作迁移.json",
+      "bytes": 61583,
+      "sha256": "f2460950a86203701ce2c0be9e6923b961b633050c749dabeead8660049bde94"
+    }
+  ]
+}
